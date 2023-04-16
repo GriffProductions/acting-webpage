@@ -2,59 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephen Griffith - Official Website</title>
+    <title>Stephen Griffith - Actor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <div class="hero-text">
-                <h1>Stephen Griffith</h1>
-                <p>Official Website</p>
-            </div>
-        </section>
+    <div class="container">
+        <header>
+            <h1>Stephen Griffith</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <section id="about">
             <h2>About</h2>
-            <p>Insert actor's bio here.</p>
+            <p>Stephen Griffith is a North Hollywood-based actor with a passion for bringing stories to life on stage and screen. With years of experience in the industry, Stephen has developed a reputation for his professionalism, energy, and enthusiasm for his craft. He thrives on collaborating with directors and fellow actors to create performances that are both powerful and authentic.</p>
+            <p>Stephen takes pride in his proximity to the entertainment industry and relishes the opportunity to work with other creative professionals in the area. His dedication to his craft is evident in his commitment to honing his skills through ongoing training and education. Whether he's performing in a play, working on a film, or pursuing his other artistic endeavors, Stephen brings a contagious energy and a true love of acting to every project he takes on.</p>
         </section>
+
         <section id="gallery">
             <h2>Gallery</h2>
-            <div class="gallery-images">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
-            </div>
+            <p>Check out some of his photos <a href="gallery.html" target="_blank">here</a>.</p>
         </section>
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Insert actor's resume here.</p>
-        </section>
+
         <section id="contact">
             <h2>Contact</h2>
-            <form action="submit-form.php" method="POST">
+            <p>To get in touch with me, please use the contact form below.</p>
+            <form action="send-email.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
+
                 <button type="submit">Send</button>
             </form>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Stephen Griffith. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>
