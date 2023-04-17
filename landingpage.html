@@ -8,13 +8,38 @@
 <body>
     <div class="container">
         <header>
+            <style>
+                body {
+                    background-color: #1A1A1A;
+                }           
+                /* H1 Styling */
+                h1 {
+                    color: #FFFFFF;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px #000000;
+                    letter-spacing: 1px;
+                    margin-top: 10px;
+                    text-align: center;
+                }            
+                /* Add animation */
+                h1:hover {
+                    animation: shake 0.5s;
+                    animation-iteration-count: infinite;
+                }
+            
+                @keyframes shake {
+                    0% { transform: translate(0, 0); }
+                    20% { transform: translate(-10px, 0); }
+                    40% { transform: translate(10px, 0); }
+                    60% { transform: translate(-10px, 0); }
+                    80% { transform: translate(10px, 0); }
+                    100% { transform: translate(0, 0); }
+                }
+            </style>
             <h1>Stephen Griffith</h1>
-            <nav>
-                <ul>
-                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
-                    <li><a href="mailto:bus.griff@gmail.com?subject=Reaching out to Stephen Griffith from Griff Productions Webpage&body=">Contact</a></li>
-                </ul>
-            </nav>
         </header>
 
         <section id="about">
@@ -48,71 +73,73 @@
             </div>
         </section>
 
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
-            <div style="flex-basis: calc(50% - 10px);">
-              <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #766d6d;">
-                <h2>English Blurb</h2>
-                <audio controls>
-                  <source src="https://drive.google.com/uc?export=download&id=1TFHqOoujBV868-HBhGbERppgcbbAQFQg" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <div style="flex-basis: calc(50% - 10px);">
-              <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #766d6d;">
-                <h2>French Blurb</h2>
-                <audio controls>
-                  <source src="https://drive.google.com/uc?export=download&id=1X2Q5rqMS_NBX5n1kH5j6qWf0OlIaxk9z" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <div style="flex-basis: calc(50% - 10px);">
-              <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #766d6d;">
-                <h2>German Blurb</h2>
-                <audio controls>
-                  <source src="https://drive.google.com/uc?export=download&id=16zEKaKkVdvQn9goS4iNxA8NfgJkvBmG_" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <div style="flex-basis: calc(50% - 10px);">
-              <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #766d6d;">
-                <h2>Italian Blurb</h2>
-                <audio controls>
-                  <source src="https://drive.google.com/uc?export=download&id=1_R-DWs2_FzqKYBcxN2l07-2Xb-eNuYX1" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <div style="flex-basis: calc(50% - 10px);">
-              <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #766d6d;">
-                <h2>Portuguese Blurb</h2>
-                <audio controls>
-                  <source src="https://drive.google.com/uc?export=download&id=1rLCsRLgjq5bs6_Kd9FWrAqSVnKLICNsb" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <div style="flex-basis: calc(50% - 10px);">
-                <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #766d6d;">
-                  <h2>Spanish Blurb</h2>
-                  <audio controls>
-                    <source src="https://drive.google.com/uc?export=download&id=1o6WLyPktHqZ9a2y13nmUaRd0iLj6K3LM" type="audio/mpeg">
+        <section id="blurbs">
+            <h2>Language Blurbs</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+                <div style="flex-basis: calc(50% - 10px);">
+                <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #d35400;">
+                    <h2>English</h2>
+                    <audio controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1TFHqOoujBV868-HBhGbERppgcbbAQFQg" type="audio/mpeg">
                     Your browser does not support the audio element.
-                  </audio>
+                    </audio>
                 </div>
-            </div>        
+                </div>
+                <div style="flex-basis: calc(50% - 10px);">
+                <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #d35400;">
+                    <h2>French</h2>
+                    <audio controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1X2Q5rqMS_NBX5n1kH5j6qWf0OlIaxk9z" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </div>
+                </div>
+                <div style="flex-basis: calc(50% - 10px);">
+                <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #d35400;">
+                    <h2>German</h2>
+                    <audio controls>
+                    <source src="https://drive.google.com/uc?export=download&id=16zEKaKkVdvQn9goS4iNxA8NfgJkvBmG_" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </div>
+                </div>
+                <div style="flex-basis: calc(50% - 10px);">
+                <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #d35400;">
+                    <h2>Italian</h2>
+                    <audio controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1_R-DWs2_FzqKYBcxN2l07-2Xb-eNuYX1" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </div>
+                </div>
+                <div style="flex-basis: calc(50% - 10px);">
+                <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #d35400;">
+                    <h2>Portuguese</h2>
+                    <audio controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1rLCsRLgjq5bs6_Kd9FWrAqSVnKLICNsb" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </div>
+                </div>
+                <div style="flex-basis: calc(50% - 10px);">
+                    <div style="border-radius: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); padding: 20px; background-color: #d35400;">
+                    <h2>Spanish</h2>
+                    <audio controls>
+                        <source src="https://drive.google.com/uc?export=download&id=1o6WLyPktHqZ9a2y13nmUaRd0iLj6K3LM" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    </div>
+                </div>        
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>View Stephen Griffith's acting resume <a href="resume.pdf" target="_blank">here</a>.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>To get in touch, please <a href="mailto:bus.griff@gmail.com?subject=Reaching out to Stephen Griffith from Griff Productions Webpage&body=">send an email</a> now!</p>
-        </section>
-    </div>
+            <section id="resume" class="resume-section">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-description">View Stephen Griffith's acting resume <a href="resume.pdf" target="_blank">here</a>.</p>
+            </section>
+            
+            <section id="contact" class="contact-section">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-description">To get in touch, please <a href="mailto:bus.griff@gmail.com?subject=Reaching out to Stephen Griffith from Griff Productions Webpage&body=">send an email</a> now!</p>
+            </section>
+    </section>  
 </body>
 </html>
