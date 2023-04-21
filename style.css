@@ -1,3 +1,42 @@
+
+#toTop {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+  
+  #toTop:hover {
+    background-color: #555;
+  }
+  
+  #toTop:hover #toTopHover {
+    opacity: 1;
+  }
+  
+  #toTop #toTopHover {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #555;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }  
+
+/* */
+
 body {
     background-color: #1a1a1a;
     color: #fff;
